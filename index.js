@@ -1,60 +1,45 @@
-/* chart.js chart examples */
-
-// chart colors
 var colors = ['#44804E', '#0075FF', '#FFD74B'];
 
 var chBar = document.getElementById("chBar");
-var chartData = {
-  label: ["Médicos", "Tecnicos", "Enfermeiros"],
-  datasets: [{
-    label: "Médicos",
-    data: [55769],
-    backgroundColor: colors[0]
-  },
-  {
-    label: "Técnicos de enfermagem",
-    data: [98945],
-    backgroundColor: colors[1]
-  },
-  {
-    label: "Enfermeiros",
-    data: [45000],
-    backgroundColor: colors[2]
-  }]
-};
 
-if (chBar) {
-  new Chart(chBar, {
-    type: 'bar',
-    data: chartData,
-    options: {
-      responsive: true,
-      title: {
-        display: true,
-        fontSize: 18,
-        text: "Grupos de profissionais de saúde infectados pela Covid-19"
-      },
-      scales: {
-        xAxes: [{
-          barPercentage: 0.4,
-          categoryPercentage: 0.5
-        }],
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      },
-      legend: {
-        display: true,
 
-      }
+var myChart = new Chart(chBar, {
+  type: 'bar',
+  data: {
+    labels: ['Médicos', 'Enfermeiros', 'Técnicos de enfermagem'],
+    datasets: [{
+      padding: '25',
+      backgroundColor: ['#44804E', '#0075FF', '#FFD74B'],
+      data: [375, 572, 300]
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      fontSize: 15,
+      text: "Grupo de profissionais da saúde mais afetados dentre os casos registrados de SRAG hospitalizados pela covid-19"
+    },
+    scales: {
+      xAxes: [{
+        barPercentage: 0.4,
+        categoryPercentage: 0.5
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false,
+
     }
-  });
-}
-
+  }
+});
 
 /*Gráficos evasão estudantil*/
+
+
 
 // Bar chart
 var publicBar = document.getElementById("bar-chart1");
@@ -103,54 +88,90 @@ if (PrivateBar) {
       title: {
         display: true,
         fontSize: 15,
-        text: "Avaliação da qualidade do ensino segundo Pais e responsáveis (%)"
+        text: "Avaliação da qualidade do ensino remoto segundo Pais e responsáveis (%)"
       },
       legend: {
         display: true,
       },
-      /*
-      tooltips: {
-        callbacks: {
-          label: function (tooltipItem, data) {
-            return data.datasets[tooltipItem.datasetIndex].data + "%"
-          }
-        }
-      }
-      */
     }
   });
 }
 
 /*Grupos de risco */
-
-//Doughnut Chart
-new Chart(document.getElementById("doughnut-chart"), {
-  type: 'bar',
+var group = document.getElementById("doughnut-chart")
+var myChart = new Chart(group, {
+  type: 'horizontalBar',
   data: {
-    labels: ["Idosos", "Asmáticos", "Cardiácos", "Hipertensos"],
-    datasets: [
-      {
-        //label: ["Idosos"], 
-        backgroundColor: ["#F2BE03", "#FFD84E", "#FFD84E", "#F6E89A"],
-        data: [2478, 5267, 734, 784]
-      }
-    ]
+    labels: ['Cardiopatia', 'Diabetes', 'Doença renal', 'Doença neurológica', 'Pneumopatia'],
+    datasets: [{
+      data: [60565, 44139, 9122, 10021, 8958],
+      backgroundColor: [
+        '#44804E',
+        '#0075FF',
+        '#FFD74B',
+        '#f9a825',
+        '#ef6c00',
+      ],
+      borderWidth: 1
+    }]
   },
   options: {
     title: {
       display: true,
-      text: 'Grupos de risco infectados covid-19',
-      fontSize: 15
+      fontSize: 15,
+      text: "Cormobidade e fatores de risco dos óbitos por SRAG Covid-19"
+    },
+    scales: {
+      xAxes: [{
+        barPercentage: 0.4,
+        categoryPercentage: 0.5
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
     },
     legend: {
-      display: false
+      display: false,
+
     }
   }
 });
 
-/**Depressão / Ansiedade */
 
+/**Depressão / Ansiedade */
 var MintBar = document.getElementById("bar-chart3");
+var myDoughnutChart = new Chart(MintBar, {
+  type: 'horizontalBar',
+  data: {
+    labels: ['Prejuízo mental', 'Dificuldade de concentração', 'Ansiedade', 'Solidão', 'Depressão ou Claustrofobia'],
+    datasets: [{
+      data: [43.7, 24, 13.2, 5.8, 0.8],
+      backgroundColor: [
+        '#44804E',
+        '#0075FF',
+        '#FFD74B',
+        '#f9a825',
+        '#ef6c00',
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      fontSize: 15,
+      text: "Registro de Casos de Sintomas de transtornos mentais (%)"
+    },
+    legend: {
+      display: false,
+
+    }
+  }
+});
+
+/*
 var charMinData = {
   labels: ["Depressão", "Ansiedade"],
   datasets: [{
@@ -189,6 +210,7 @@ if (MintBar) {
     }
   });
 }
+*/
 
 /**Desemprego */
 
@@ -196,7 +218,7 @@ var chTxBar = document.getElementById("chTxBar");
 var chartTxData = {
   labels: ["2018", "2019", "2020"],
   datasets: [{
-    data: [589, 445, 483],
+    data: [12.3, 11.9, 14.4],
     backgroundColor: ['#0075FF', '#66A4ED', '#B6D4F6']
   }]
 };
