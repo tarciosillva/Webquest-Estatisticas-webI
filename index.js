@@ -171,47 +171,6 @@ var myDoughnutChart = new Chart(MintBar, {
   }
 });
 
-/*
-var charMinData = {
-  labels: ["Depressão", "Ansiedade"],
-  datasets: [{
-    label: "Quantidade (milhões)",
-    data: [358, 299],
-    backgroundColor: ['#0075FF', '#5CB1FF']
-  }]
-};
-
-if (MintBar) {
-  new Chart(MintBar, {
-    type: 'horizontalBar',
-    data: charMinData,
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Registro de Casos de depressão e ansiedade',
-        fontSize: 15
-      },
-      scales: {
-        xAxes: [{
-          barPercentage: 0.4,
-          categoryPercentage: 0.2
-        }],
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      },
-      legend: {
-        display: false,
-
-      }
-    }
-  });
-}
-*/
-
 /**Desemprego */
 
 var chTxBar = document.getElementById("chTxBar");
