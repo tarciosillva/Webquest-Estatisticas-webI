@@ -38,9 +38,6 @@ var myChart = new Chart(chBar, {
 });
 
 /*Gráficos evasão estudantil*/
-
-
-
 // Bar chart
 var publicBar = document.getElementById("bar-chart1");
 var charPublicData = {
