@@ -119,6 +119,18 @@ html{
     left: -39px;
     top: 2182px;
 }
+.post-box-dia{
+    background: url("../img/pagblogInicio.png") no-repeat center 0;
+    width: 1677px;
+    height: 2043px;
+    left: 129px;
+    top: 712px;
+
+}
+.post-box-dia{
+    padding-top: 20px;
+    padding-left: 50px;
+}
 
 .text{
     font-weight: 600;
@@ -397,6 +409,9 @@ html{
 }
 
 
+
+
+
 @media only screen and (max-width: 700px) {
     .insta-response {
       width: 49.99999%;
@@ -407,4 +422,101 @@ html{
     .insta-response {
       width: 100%;
     }
+}
+
+
+/*postagens*/
+.post-box{
+    padding: 90px;
+
+}
+.post-box{
+    padding-top: 100px;
+}
+.text-post{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    
+    color: #000000;
+    
+}
+.redesociais-box{
+    padding: 10px;
+}
+.autor-post{
+    width: 15%;
+    float: left;
+    padding-top: 50px;
+}
+.referencia-autor{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+
+    width: 85%;
+    float: right;
+    padding-top: 100px;
+}
+
+.postagen{
+    padding-top: 10px;
+}
+
+.post{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 36px;
+    text-align: justify;
+    
+    color: #000000;
+}
+
+
+/* sobre nos*/
+.perfilI{
+    width: 50%;
+    float: left;
+    padding-top: 160px;
+}
+.sobre-box{
+    width: 50%;
+    float: left;
+    padding-top: 100px;
+}
+.redes-sobre-nos, .nome{
+    padding-left: 90px;
+}
+.nome{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 52px;
+
+color: #000000;
+}
+.text-Sobre{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    
+    color: #000000;
+}
+.text-nos{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    text-align: justify;
 }
