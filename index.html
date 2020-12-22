@@ -1,128 +1,260 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="sortcut icon" href="/assets/Frame 17 (1).png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >ComoChegamosAteAqui</title>
+    <link rel="icon" type="img" href="img/bandeira.png">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="js/message.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
-        integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="
-        crossorigin="anonymous" />
-
-    <title>Impactos do CORONAVIRUS</title>
 </head>
-
-<body class="bg-light">
-    <nav class="d-flex justify-content-around bg-white shadow rounded navbar navbar-preview mb-2">
-        <div>
-            <p class="mb-0">
-                <img class="mr-2" src="./assets/Frame 17 (1).png" style=" width: 4rem;" alt="">
-                <b>IMPACTOS DO CORONAVIRUS</b>
-               
-            </p>
-        </div>
-        <div></div>
-        <div>
-            <a href="index.html">
-                <button type="button" class="btn btn-primary">Covid Brasil</button>
+<body>
+    <div class="box">
+        <div class="center">
+            <a href='#home' class="logo">
+                <i class="logoB" ></i>
             </a>
-            <a href="#">
-                <button type="button" class="btn btn-warning">Webcast</button>
-            </a>
-        </div>
-    </nav>
+            <ul  class="menu"> 
+                <li class="menu__li">
+                    <a href="#home" class="menu__link">Home</a>
+                </li>
+                <li class="menu__li">
+                    <a href="/blog/contato.html" class="menu__link">Contato</a>
+                </li>
+                <li class="menu__li">    
+                    <a href="/blog/sobreNos.html" class="menu__link">Sobre</a>
+                </li>
+                <li class="menu__li">    
+                    <a href="estatisticas.html" class="bt-blue">Impacto</a>
+                </li>
+            </ul>
 
-    <div class="mt-3 align-items-center justify-content-center no-gutters row">
-        <div class="col-xxl-8 pr-lg-0 mr-3 mb-3 col-lg-6 col-xl-6 shadow rounded">
-            <div class="card">
-                <div class="card-body">
-                    <canvas class="mr-0 w" id="chBar" style="height: 2rem; width: 6rem;"></canvas>
-                    <p class="ml-4 text-secondary text-justify" style="font-size: 12px;" >Fonte: Sistema e-SUS Notifica. Dados atualizados em 07 de dezembro de 2020 às 12h</p>
+            <div class="clear"></div>
+
+            <div class="apresentacao__box">
+                <div class="apresentacao__descricao">
+                    <h1 id="home"  class="text">Como chegamos ate aqui?</h1>
+                    <p class="text-sub">A plataforma mais completa e acessivel para todos os Brasileiros</p>
+                    <img src="img/pagInicialCima.png" class="dast-box">
+                    <p class="text-compl">Covid-19 e seus impactos na Economia, Educação, Saude Mental,  <br> Profissionais da saúde, Pessoas vuneraveis e FakeNews.</p>
+
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 mb-2 pl-lg-0 col-lg-6 col-xl-3 shadow rounded">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="mt-2 text-center">Casos confirmados hoje</h5>
-                    <h1 class="text-warning text-center font-weight-bold mt-4" style="font-size: 6rem;">
-                        50.117
-                    </h1>
-                    <p class="mt-4 ml-4 text-secondary text-justify" style="font-size: 12px;"> A cada dia novos casos informados desde o dia anterior são mostrados · Atualizado menos de 2 dias atrás·  Fonte: <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9-73JuN3tAhVIK7kGHRqMCLwQ7OUFKIUCMAB6BQgBEIYC&url=https%3A%2F%2Fgithub.com%2FCSSEGISandData%2FCOVID-19&usg=AOvVaw1vKpECdLTiTa7d-LqfWRs0">JHU CSSE COVID-19 Data</a></p>
+        <div class="boxQuemSomos">
+            <div class="center">
+                <div class="alinhar__box">
+                    <h1 class="text-QS">Quem somos?</h1>
+                    <p class="text-SubQS">Somo um grupo voltado para apresentar para a sociedade e <br> todos os brasileiro informacoes relevante sobre os impactos <br>e  consequencias do COVID-19 no Brasil.</p>
+                    <a href="/blog/sobreNos.html" class="bt-blue-I" >Sobre nós</a>
+
                 </div>
+                <div class="imgQuemSomos__box">
+                    <img class="img-quemSomos" src="/img/pagInicialMeio.png" >
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>    
+        <div class="boxBord">
+            <div class="center">
+                <div class="imgDast__box">
+                    <img class="img-quemSomos" src="/img/pagInicialMeioDois.png" >
+                </div>
+                <div class="alinhar__box">
+                    <h1 class="text-Dast">Dados sobre os impactos do COVID-19</h1>
+                    <a href="/estatisticas.html" class="bt-blue-alinha"><p class="bt-blue-I">Impacto</p></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="funco__box">
+            <div class="boxPostagens">
+                <div class="centeI">
+                    <div class="postD__box">
+                        <h1 class="post-destaque">O aumento das FakeNews no periodo da pandemia e seus efeitos.</h1>
+                        <a href="blog/FankNews.html" class="postagem">
+                        <h5 class="saibaMais">Saiba mais</h5>
+                        </a>
+                    </div>
+                    <div class="postE__box">
+                        <h1 class="post-destaqueI">Saude mental e sua importancia.</h1>
+                        <a href="blog/SaudeMental.html" class="postagem">
+                        <h5 class="saibaMais">Saiba mais</h5>
+                        </a>
+                    </div>
+                    <div class="postD__box">
+                        <h1 class="post-destaque">Educacao, podemos estudar em qualquer lugar?</h1>
+                        <a href="blog/educacao.html" class="postagem">
+                        <h5 class="saibaMais">Saiba mais</h5>
+                        </a>
+                    </div>
+                    <div class="postE__box">
+                        <img src="/img/pagInicialArtgD.png" alt="">
+                        </a>
+                    </div>
+                    <div class="postD__box">
+                        <a  class="postagem">
+                        <img src="/img/pagInicialArtgE.png" alt="">
+                        </a>
+                    </div>
+                    <div class="postE__box">
+                        <h1 class="post-destaque"> Quem sao as pessoas vulneraveis que mais soferao com a pandemia?</h1>
+                        <a href="blog/PessoasVulneraveis.html" class="postagem">
+                        <h5 class="saibaMais">Saiba mais</h5>
+                        </a>
+                    </div>
+                    <div class="postD__box">
+                        <h1 class="post-destaque">Os herois da pandemia</h1>
+                        <a href="blog/pDaSaude.html" class="postagem">
+                        <h5 class="saibaMais">Saiba mais</h5>
+                        </a>
+                    </div>
+                    <div class="postE__box">
+                        <h1 class="post-destaque">Economia e as influencia do covid-19.</h1>
+                        <a href="blog/economia.html" class="postagem"></a>
+                        <h5 class="saibaMais">Saiba mais</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="boxInsta">
+                <div class="centerI">
+                    <div class="linha-insta"> 
+                        <div class="insta-response">
+                            <div class="insta-pos">
+                                <a href="https://www.instagram.com/p/CJB_uOtD7ro/?utm_source=ig_web_copy_link">
+                                    <img src="img/2.png" alt="pj" class="img" width="800" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insta-response">
+                            <div class="insta-pos">
+                                <a href="https://www.instagram.com/p/CJB_uOtD7ro/?utm_source=ig_web_copy_link">
+                                    <img src="img/1.png" alt="pj" class="img" width="800" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insta-response">
+                            <div class="insta-pos">
+                                <a href="https://www.instagram.com/p/CJB_uOtD7ro/?utm_source=ig_web_copy_link">
+                                    <img src="img/3.png" alt="pj" class="img" width="800" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="linha-insta1"> 
+                        <div class="insta-response">
+                            <div class="insta-pos">
+                                <a href="https://www.instagram.com/p/CJB_uOtD7ro/?utm_source=ig_web_copy_link">
+                                    <img src="img/4.png" alt="pj" class="img" width="800" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insta-response">
+                            <div class="insta-pos">
+                                <a href="https://www.instagram.com/p/CJB_uOtD7ro/?utm_source=ig_web_copy_link">
+                                    <img src="img/5.png" alt="pj" class="img" width="800" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="insta-response">
+                            <div class="insta-pos">
+                                <a href="https://www.instagram.com/p/CJB_uOtD7ro/?utm_source=ig_web_copy_link">
+                                    <img src="img/6.png" alt="pj" class="img" width="800" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxPodCast">
+                <div class="center">
+                    <div class="alinhar__box">
+                        <h1 class="text-PC">Fique atualizado com nosso podcast, produzido especialmente para você.</h1>
+                        <a href="https://castbox.fm/ch/3639564" class="bt-blue-I" >Ouvir PodCast</a>
+                    </div>
+                    <div class="imgQuemSomos__box">
+                        <img class="img-podCast" src="img/pagPodcast.png">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="boxNewsletter">
+                <div class="boxBord">
+                    <div class="center">
+                        <div class="imgDast__box">
+                            <img class="img-News" src="/img/pagNewsletter.png" >
+                        </div>
+                        <div class="alinhar__box">
+                            <h1 class="text-News">NewsLetter</h1>
+                            <p>Fique atualizado com nossos e-mail</p>
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label"></label>
+                                  <input type="email" placeholder="E-mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <button type="submit" class="btn btn-primary" onclick="newslatter()">Submit</button>
+                            </form>
+                            <br><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="rodape">
+            <div class="center">
+                <div class="foter-box">
+                    <div class="log-rodap">
+                    <i class="logoB"></i>
+                    <br>
+                    </div>
+                    <div>
+                        <br><br>
+                        <a href='#' class="logo-rodape">    
+                            <img src="/img/logoPodcast.png" alt="PodCast" width="30" height="30">
+                        </a>
+                        <a href='#' class="logo-rodape">   
+                            <img src="/img/logoInstagram.png" alt="Instagram" width="30" height="30">
+                        </a>
+                        <a href='#' class="logo-rodape">   
+                            <img src="/img/logoTiktok.png" alt="Tiktok" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+                   
+                <div class="foter-menu-box">
+                    <strong class="foter-title">Contatos</strong>
+                    <p class="foter-menu"> contato@cca.gov.br</p>
+                    <p class="foter-menu"> +55 (11) 33228843</p>
+
+                </div>
+                <div class="foter-menu-box">
+                    <strong class="foter-title">Endereço </strong>
+                    <p>Folha 22, Quadra 04, Lote Especial, s/n.º -<br>
+                       Brasilia, Goias, Brasil, Terra,<br> 
+                       Sistema Solar, Via Lactea</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="foter-auto">
+                <p>Design by <a href="https://www.instagram.com/analindiner/">@AnaLindiner</a> && 
+
+                            <a href="https://www.instagram.com/tarciosillva7/"> @TarcioSilva</a></p>
+
             </div>
         </div>
     </div>
-
-    <div class="mt-3 align-items-center justify-content-center no-gutters row">
-        <div class="col-xxl-4 mb-2 mr-2 pl-lg-0 col-lg-4 col-xl-3 shadow rounded">
-            <div class="card">
-                <div class="card-body">
-                    <canvas id="bar-chart1" height="200"></canvas>
-                    <p class="ml-4 mt-4 text-secondary text-justify" style="font-size: 12px;">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2020/08/12/datasenado-quase-20-milhoes-de-alunos-deixaram-de-ter-aulas-durante-pandemia#:~:text=DataSenado%3A%20quase%2020%20milh%C3%B5es%20de%20alunos%20deixaram%20de%20ter%20aulas%20durante%20pandemia,-Elisa%20Chagas%20%7C%2012&text=Entre%20os%20quase%2056%20milh%C3%B5es,passaram%20a%20ter%20aulas%20remotas.">DataSenado</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xxl-4 mb-2 pl-lg-0 col-lg-4 col-xl-3 shadow rounded">
-            <div class="card">
-                <div class="card-body">
-                    <canvas id="bar-chart2" height="200"></canvas>
-                    <p class="ml-4 mt-4 text-secondary text-justify" style="font-size: 12px;">Fonte: <a href="https://agenciabrasil.ebc.com.br/educacao/noticia/2020-08/pais-acreditam-que-qualidade-do-ensino-caiu-na-pandemia-diz-pesquisa">Agência Brasil</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="ml-3 col-xxl-4 mb-2 pl-lg-0 col-lg-4 col-xl-3 shadow rounded">
-            <div class="card">
-                <div class="card-body">
-                    <canvas id="doughnut-chart" width="620" height="410"></canvas>
-                    <p class="ml-4 mt-4 text-secondary text-justify" style="font-size: 12px;" >Fonte: Sistema de Informação da Vigilância Epidemiológica da Gripe.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="w-75 d-flex align-items-center no-gutters row" style="margin: 0 auto;">
-        <div class="mb-3 pr-lg-2 mb-3 col-lg-6 ">
-            <div class="card">
-                <div class="card-body">
-                    <canvas id="bar-chart3" height="90"></canvas>
-                    <p class="ml-4 mt-4 text-secondary text-justify" style="font-size: 12px;" >Fonte: <a href="https://exame.com/carreira/estes-graficos-mostram-como-a-saude-mental-virou-prioridade-na-pandemia/">Exame.com</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-3 pl-lg-2 mb-3 col-lg-6 ">
-            <div class="card">
-                <div class="card-body">
-                    <canvas id="chTxBar" height="90"></canvas>
-                    <a href=""></a>
-                    <p class="ml-4 mt-4 text-secondary text-justify" style="font-size: 12px;" >Fonte: <a style="text-decoration: none;" href="https://agenciabrasil.ebc.com.br/economia/noticia/2020-01/taxa-de-desemprego-no-pais-fecha-2019-em-119">Agencia Brasil</a> , <a style="text-decoration: none;" href="https://g1.globo.com/economia/noticia/2020/10/30/desemprego-no-brasil-sobe-para-144percent-em-agosto-diz-ibge.ghtml">G1 economia</a>  </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ChartJS-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="index.js"></script>
-
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
